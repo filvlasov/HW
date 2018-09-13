@@ -1,0 +1,68 @@
+class HomeWork1{
+    public static void main(String[] args){
+	
+	/* task 2*/
+int aZ = 1;
+short aS = 2;
+long aL = 3L;
+float bF = 4f;
+double bD = 5.5;
+boolean cB = true;
+char dC = 'S';
+byte eB = 8;
+
+/* task 3*/
+System.out.println(calcViraz(1,2,3,4));
+
+/*task 4*/	
+System.out.println(sumIn10to20(5,4));
+
+/*task 5*/
+isPosOrNeg(0);
+
+/*task 6*/
+System.out.println(isNeg(1));
+
+/*task 7*/
+printName("Philipp");
+
+/*task 8*/
+isVisokosn(2000);
+
+	}
+
+/* method for task 3*/
+public static double calcViraz(double a, double b, double c, double d){
+return a * (b + (c / d));
+}
+
+/* method for task 4*/
+public static boolean sumIn10to20(int a, int b){
+if(a + b <= 20 && a + b >= 10) return true;
+else return false;
+}
+
+/* method for task 5*/
+public static void isPosOrNeg(int a){
+if(a<0) System.out.println("Number is negative");
+else System.out.println("Number is positive");
+}
+
+/* method for task 6*/
+public static boolean isNeg(int a){
+if(a<0) return true;
+else return false;
+}
+
+/* method for task 7*/
+public static void printName(String a){
+System.out.println("Hello, " + a + "!");
+}
+
+/* method for task 8*/
+public static void isVisokosn(int a){
+	if (a%400==0) System.out.println(a + " is visokosn.");
+	else if (a%4==0&&a%100!=0) System.out.println(a + " is visokosn.");
+	else System.out.println(a + " is non visokosn.");
+}
+}
